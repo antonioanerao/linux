@@ -1,0 +1,7 @@
+### Ubuntu não desliga. Ele recebe o sinal para desligar, mata todos os processos mas fica parado com o logo do ubuntu
+
+1) Abra o arquivo /etc/defult/grub
+2) Procure pela linha _GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"_
+3) Altere a linha deixando-a assim: __GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi=force"_
+4) Fazer o update do grub com _sudo update-grub_
+5) Reiniciar o ubuntu
